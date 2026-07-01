@@ -9,5 +9,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: write-script
-        run: Hello world this is firs world
+        run: echo "hellow this is the first world"
+      - name: install npm
+        run: npm install
+      - name: install composer
+        run: composer install
 
