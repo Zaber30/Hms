@@ -15,5 +15,7 @@ jobs:
       - name: install composer
         run: composer install
       - name: migrate app
-        run: php artisan migrate
+        run: php artisan migrate --force
+      - name: config cache
+        run: php artisan config:cache
 
