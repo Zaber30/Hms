@@ -4,9 +4,10 @@ on:
     branches:
       - main
 jobs:
-   build:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Run a one line script
-        run: echo Hello, world!
+      - name: write-script
+        run: Hello world this is firs world
+
